@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+div.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-light;
+}
+
+header.header {
+  background-color: $primary;
+  color: $secondary;
+  padding: 5rem;
+  text-align: center;
+
+  h1 {
+    display: inline-block;
+    margin: unset;
+    border-bottom: 3px solid $accent;
+  }
+}
+
+main.content {
+  display: flex;
+  flex-grow: 1;
+}

@@ -1,0 +1,17 @@
+@import '../styles/variables.scss';
+
+button.sign-out {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  padding: 1rem 2rem;
+  font-size: .75rem;
+
+  border: unset;
+  background-color: $secondary;
+  border-radius: 2rem;
+  color: $primary;
+  font-weight: bold;
+  cursor: pointer;
+}

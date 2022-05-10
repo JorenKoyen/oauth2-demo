@@ -1,63 +1,10 @@
 @import './variables.scss';
-$button-offset: 5px;
-
-div.page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: $primary-light;
-}
-
-header.welcome-header {
-  background-color: $primary;
-  color: $secondary;
-  padding: 5rem;
-  text-align: center;
-
-  h1 {
-    display: inline-block;
-    margin: unset;
-    border-bottom: 3px solid $accent;
-  }
-}
+@import './page.scss';
 
 main.content {
-  display: flex;
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
   z-index: 0;
-
-  button {
-    border: unset;
-    background-color: $secondary;
-    padding: 1.5rem 5rem;
-    border-radius: 2rem;
-    position: relative;
-    color: $primary;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-
-
-    &::before {
-      content: '';
-      z-index: -1;
-      position: absolute;
-      background-color: $accent;
-      width: 100%;
-      height: 100%;
-      border-radius: 2rem;
-      top: $button-offset;
-      left: $button-offset;
-      transition: all .25s ease-out;
-    }
-
-    &:hover::before {
-      top: $button-offset * 3;
-      left: $button-offset * 3;
-    }
-  }
 }
 
 footer {
