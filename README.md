@@ -2,6 +2,19 @@
 
 A small demo project used to demonstrate how OAuth2.0 works.
 
+## Setup
+
+To start up the application you will have to launch the gravitee backend using docker compose.
+The front end application can be started using `npm`. Make sure you configure your application correctly in gravitee and confirm that the settings in `src/config/oidc.ts` match your gravitee environment.
+
+```bash
+# start gravitee backend
+docker compose -f env/local.yml up -d
+
+# start react app
+npm run start
+```
+
 ## Informative links
 
 - [OAuth2.0](https://oauth.net/2/)
